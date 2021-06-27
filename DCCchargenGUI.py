@@ -13,6 +13,7 @@ from datetime import datetime
 
 def charGen(characters, sets):
     
+    
     #load excel file and specific sheets
     wb = load_workbook('DCCsheet.xlsx')
     EquipSheet = wb['equipment']
@@ -51,14 +52,14 @@ def charGen(characters, sets):
         return roll
     
     def namegen ():
-            part1 = ('Kei', 'Ber', 'Yu', 'Con', 'Kaji', 'Sam','Fro','Gan', 'Yuna', 'Sar', 'Phil', 'On', 'Ike', 'Xan', 'Alf', 'Wil')
-            part2 = ('ko', 'ger','agald', 'kiko', 'hippus', 'ram','wise','do', 'swin', 'ran', 'ron', 'dalf', 'michi', 'hiki', '', 'mochi', 'trand', 'eger', 'agon', 'son','eron', 'lip', 'do', 'cras', 'red', 'hiko')
+            part1 = ('Kei', 'Ber', 'Yu', 'Con', 'Kaji', 'Sam','Fro','Gan', 'Bun', 'Dai', 'Yuna', 'Sar', 'Shige', 'Phil', 'Geirr', 'Fride', 'On', 'Ike', 'Xan', 'Æthel', 'Alf', 'Wil', 'Ma', 'Chi', 'Yo', 'Ba', 'Hu', 'Mitsu', 'Ai', 'Al', 'Pen', 'Æðel')
+            part2 = ('ko', 'ki', 'ka', 'zumi', 'zaki', 'ger','agald', 'kiko', 'hippus', 'ram','wise', 'do', 'vasius', 'nin', 'ji', 'swin', 'wald', 'malric', 'ran', 'stan', 'ron', 'dalf', 'stein', 'michi', 'dert', 'bert',  'hiki', '', 'shi',  'mochi', 'trand', 'rod', 'eger', 'agon', 'son','eron', 'lip', 'do', 'cras', 'red', 'hiko', 'koto')
             Namepart1 = random.choice(part1)
             Namepart2 = random.choice(part2)
             Firstname = Namepart1 + Namepart2
             last1 = ('the ', 'son of ', '', '', '')
-            last3 = ('Yokohama', 'Michitsune', 'Naotomo', 'Teruhira','Kagekazu', 'Shigetoki', 'Munetami', 'Bakemono', 'Sukeyasu', 'Taiko', 'Akitoki', 'Yamada Bome', 'Kujo' )
-            thelast = ('Bold', 'Bald', 'Branded', 'Wise', 'Quick', 'Kind', 'Silent', 'Sizeless', 'Peerless', 'Stranger', 'Watcher', 'Unwise', 'Numbered', 'Believer', 'Bastard')
+            last3 = ('Yokohama', 'Michitsune', 'Naotomo', 'Wada', 'Ide', 'Higasa', 'Suzuki', 'Sato', 'Ito', 'Teruhira','Kagekazu', 'Shigetoki', 'Munetami', 'Bakemono', 'Sukeyasu', 'Taiko', 'Akitoki', 'Yamada Bome', 'Cazellnu', 'Kujo', 'Yoshi', 'Murai', 'Kircheis','von Reuenthal', 'von Mariendorf', 'Mittermeyer', 'von Oberstein', 'Bittenfeld', 'Kesler', 'Yang', 'von Fahrenheit', 'von Eisenach')
+            thelast = ('Bold', 'Bald', 'Branded', 'Wise', 'Quick', 'Kind', 'Silent', 'Sizeless', 'Peerless', 'Stranger', 'Watcher', 'Unwise', 'Numbered', 'Believer', 'Bastard', 'Tall', 'Cursed', 'Lucky', 'Unlucky', 'Blessed')
             
             Lastpart1 = random.choice(last1)
             if Lastpart1 == 'the ':
